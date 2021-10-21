@@ -1,3 +1,4 @@
+[Discussion Post (created on 21/9/2021 at 22:49)](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/discuss/1533466/Runtime%3A-100-better-and-Memory-75.25-better)  
 <h2>1342. Number of Steps to Reduce a Number to Zero</h2><h3>Easy</h3><hr><div><p>Given an integer <code>num</code>, return <em>the number of steps to reduce it to zero</em>.</p>
 
 <p>In one step, if the current number is even, you have to divide it by <code>2</code>, otherwise, you have to subtract <code>1</code> from it.</p>
