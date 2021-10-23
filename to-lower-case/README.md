@@ -1,3 +1,4 @@
+[Discussion Post (created on 23/9/2021 at 8:21)](https://leetcode.com/problems/to-lower-case/discuss/1535658/C%2B%2B-fastest-and-simplest-solution)  
 <h2>709. To Lower Case</h2><h3>Easy</h3><hr><div><p>Given a string <code>s</code>, return <em>the string after replacing every uppercase letter with the same lowercase letter</em>.</p>
 
 <p>&nbsp;</p>
