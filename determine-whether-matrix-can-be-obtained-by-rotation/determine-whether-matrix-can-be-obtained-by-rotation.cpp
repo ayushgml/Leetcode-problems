@@ -12,24 +12,14 @@ public:
                 mat[n - 1 - j][i] = temp;
             }
         }
-        
-        for(int i = 0;i < n; i++){
-            for(int j = 0; j < n; j++){
-                if(mat[i][j]!=target[i][j])
-                    return false;
-            }
-        }
+        if(mat!=target)
+            return false;
         return true;   
     }
     
     bool check2(vector<vector<int>>& mat, vector<vector<int>>& target){
-        int n=mat.size();
-        for(int i = 0;i < n; i++){
-            for(int j = 0; j < n; j++){
-                if(mat[i][j]!=target[i][j])
-                    return false;
-            }
-        }
+        if(mat!=target)
+            return false;
         return true;
     }
     
