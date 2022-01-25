@@ -26,21 +26,20 @@ int main() {
 }
 // } Driver Code Ends
 
-
+// [1,7,2,1,5,12,5,5]
+// [6,3,9]
 string isSubset(int a1[], int a2[], int n, int m) {
     unordered_map<int,int> ump;
     for(int i=0;i<n;i++){
         ump[a1[i]]++;
     }
-    
     for(int i=0;i<m;i++){
         ump[a2[i]]--;
     }
-    
+
     for(pair<int,int> element : ump){
-        if(element.second<0){
+        if(element.second<0)
             return "No";
-        }
     }
     return "Yes";
 }
