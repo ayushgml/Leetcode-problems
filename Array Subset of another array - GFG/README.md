@@ -1,5 +1,5 @@
 # Array Subset of another array
-## Easy 
+##  Easy 
 <div class="problem-statement">
                 <p></p><p><span style="font-size:18px">Given two arrays: <strong>a1[0..n-1]</strong> of size <strong>n</strong> and <strong>a2[0..m-1]</strong> of size <strong>m</strong>. Task is to check whether a2[] is a subset of a1[] or not. Both the arrays can be sorted or unsorted.&nbsp;It may be assumed that elements in both array are distinct.</span><br>
 &nbsp;</p>
