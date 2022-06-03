@@ -17,13 +17,15 @@ public:
             temp=temp->next;
             c++;
         }
-        int k = c - n + 1;
         ListNode *prev=nullptr, *curr=head;
         int i=1;
-        while(i<=k && curr){
-            if(i==k){
+        while(i<=c - n + 1 && curr){
+            if(i==c - n + 1){
                 if(!prev) head=curr->next;
-                else prev->next = curr->next;
+                else{
+                    prev->next = curr->next;
+                    break;
+                }
             }else prev=curr;
             curr=curr->next;
             i++;
