@@ -30,7 +30,6 @@ class Solution {
     
     public int sumBT(TreeNode root){
         if(root==null) return 0;
-        
         return root.val + sumBT(root.left) + sumBT(root.right);
     }
 }
