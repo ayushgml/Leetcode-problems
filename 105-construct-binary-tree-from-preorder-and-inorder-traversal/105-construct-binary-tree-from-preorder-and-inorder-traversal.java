@@ -19,8 +19,7 @@ class Solution {
     }
     
     public TreeNode buildTree(int preStart, int inStart, int inEnd, int[] preorder, int[] inorder) {  
-        if (preStart > preorder.length - 1 || inStart > inEnd)
-            return null;
+        if (preStart > preorder.length - 1 || inStart > inEnd) return null;
             
         TreeNode root = new TreeNode(preorder[preStart]);
         int inIndex = 0;
