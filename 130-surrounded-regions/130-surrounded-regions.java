@@ -24,7 +24,7 @@ class Solution {
     }
     
     public void boundaryDFS(char[][] board, int i, int j){
-        if(board[i][j]=='O') board[i][j]='#';
+        board[i][j]='#';
         if(i>0 && board[i-1][j]=='O') boundaryDFS(board,i-1,j);
         if(i<board.length-1 && board[i+1][j]=='O') boundaryDFS(board,i+1,j);
         if(j>0 && board[i][j-1]=='O') boundaryDFS(board,i,j-1);
