@@ -28,7 +28,7 @@ class Solution {
     }
     
     public void dfs(TreeNode node, String current_path, List<String> result){
-        current_path+="->"+Integer.toString(node.val);
+        current_path+="->"+node.val;
         
         if(node.left==null && node.right==null){
             result.add(current_path);
