@@ -24,7 +24,7 @@ class Solution {
     public int calculateSum(TreeNode root, int curr_depth, int depth_tree, int sum){
         if(root==null) return 0;
         if(root.left==null && root.right==null && curr_depth==depth_tree) return sum+=root.val;
-        else if(root.left==null && root.right==null && curr_depth!=depth_tree) return 0;
+        // else if(root.left==null && root.right==null && curr_depth!=depth_tree) return 0;
         return calculateSum(root.right, curr_depth+1, depth_tree, sum) + calculateSum(root.left, curr_depth+1, depth_tree, sum);
     }
     
