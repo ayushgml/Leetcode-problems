@@ -15,25 +15,17 @@
  */
 class Solution {
     public List<Integer> largestValues(TreeNode root) {
-        List<Integer> List = new ArrayList<Integer>();
-        if(root==null) return List;
-        Queue<TreeNode> q = new LinkedList();
-        q.add(root);
-        q.add(null);
-        List<Integer> subList = new ArrayList<Integer>();
-        while(q.size() > 1){
-            TreeNode curr = q.poll();
-            if(curr==null){
-                List.add(Collections.max(subList));
-                subList = new ArrayList<Integer>();
-                q.add(null);
-                continue;
-            }
-            subList.add(curr.val);
-            if(curr.left !=null) q.add(curr.left);
-            if(curr.right != null) q.add(curr.right);
-        }
-        List.add(Collections.max(subList));
-        return List;
+        List<Integer> list = new ArrayList();
+        dfs(root, list, 0);
+        return list;
+    }
+    
+    public void dfs(TreeNode root, List<Integer> list, int level){
+        if(root==null) return ;
+        if(level==list.size()) list.add(root.val);
+        else list.set(level, Math.max(list.get(level), root.val));
+        
+        dfs(root.left, list, level+1);
+        dfs(root.right, list, level+1);
     }
 }
