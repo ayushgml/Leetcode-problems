@@ -10,6 +10,7 @@ class Solution {
             list.add(current_string);
             return;
         }
+        
         if(open<max) backtrack(list, current_string+"(", open+1, close, max);
         if(close<open) backtrack(list, current_string+")", open, close+1, max);
     }
