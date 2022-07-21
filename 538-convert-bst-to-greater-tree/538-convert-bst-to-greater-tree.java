@@ -21,9 +21,7 @@ class Solution {
 
     public int dfs(TreeNode root, int sum){
         if(root == null) return sum;
-        sum = dfs(root.right, sum);
-        root.val += sum;
-        sum = dfs(root.left, root.val);
-        return sum;
+        root.val += dfs(root.right, sum);
+        return dfs(root.left, root.val);
     }
 }
