@@ -23,8 +23,7 @@ class Solution {
         if(root == null) return sum;
         sum = dfs(root.right, sum);
         root.val += sum;
-        sum = root.val;
-        sum = dfs(root.left, sum);
+        sum = dfs(root.left, root.val);
         return sum;
     }
 }
